@@ -3,6 +3,8 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const Header = () => {
@@ -21,9 +23,20 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-white">
-              Haru<span className="text-purple-400">Code</span>
-            </h1>
+            <Link
+              href="/"
+              className="flex items-center gap-2 group focus:outline-none"
+              aria-label="Ir para a página inicial"
+            >
+              <Image
+                src="/icon-dark.png"
+                alt="HaruCode Logo"
+                width={350}
+                height={150}
+                priority
+                className="h-12 w-auto transition-transform group-hover:scale-105"
+              />
+            </Link>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">

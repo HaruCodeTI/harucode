@@ -65,7 +65,6 @@ export default function HomePage() {
     <PageTransition>
       <div className="min-h-screen bg-black text-white">
         <Header />
-        {/* HERO */}
         <section className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4 pt-32 pb-12">
           <AnimatedElement variant="slideUp" delay={0.1}>
             <h1 className="text-5xl sm:text-7xl font-bold mb-4">
@@ -86,18 +85,8 @@ export default function HomePage() {
               </AnimatedButton>
             </a>
           </AnimatedElement>
-          <AnimatedElement variant="fadeIn" delay={0.7}>
-            <div className="mt-12 flex justify-center">
-              <img
-                src="/hero-illustration.svg"
-                alt="Ilustração HaruCode"
-                className="w-64 h-40 object-contain opacity-80"
-              />
-            </div>
-          </AnimatedElement>
         </section>
 
-        {/* SERVIÇOS */}
         <section className="max-w-5xl mx-auto py-16 px-4">
           <AnimatedElement variant="slideUp" delay={0.1}>
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">
@@ -126,7 +115,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* DIFERENCIAIS */}
         <section className="max-w-5xl mx-auto py-12 px-4">
           <AnimatedElement variant="slideUp" delay={0.1}>
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">
@@ -152,7 +140,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* PORTFÓLIO */}
         <section className="max-w-5xl mx-auto py-16 px-4">
           <AnimatedElement variant="slideUp" delay={0.1}>
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">
@@ -192,7 +179,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* DEPOIMENTO */}
         <section className="max-w-3xl mx-auto py-12 px-4">
           <AnimatedElement variant="fadeIn" delay={0.1}>
             <div className="bg-white/5 rounded-lg border border-white/10 p-8 text-center">
@@ -210,7 +196,6 @@ export default function HomePage() {
           </AnimatedElement>
         </section>
 
-        {/* CTA FINAL */}
         <section className="max-w-3xl mx-auto py-16 px-4 text-center">
           <AnimatedElement variant="slideUp" delay={0.1}>
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
